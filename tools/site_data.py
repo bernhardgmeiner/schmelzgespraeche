@@ -143,3 +143,10 @@ EHEMALIGE = [
   ("2019–2021", "Jolanda Laimer, Lorenz Füsselberger"),
   ("2019–2020", "Kathrin Lindsberger, Amina Pauler, Karolina Wiszniewska, Simon Parisot (Gründungsteam)"),
 ]
+
+
+# Originaltexte von der alten Website (leicht überarbeitet) ersetzen die Kurztexte
+from texte import TEXTE
+for _e in EVENTS:
+    if _e["slug"] in TEXTE:
+        _e["text"] = TEXTE[_e["slug"]]

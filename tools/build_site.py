@@ -70,6 +70,19 @@ def tile(e):
 <p>{esc(e["short"])}</p>
 </a>'''
 
+def render_text(items):
+    out = []
+    for t in items:
+        if isinstance(t, str):
+            out.append(f"<p>{esc(t)}</p>")
+        elif "h" in t:
+            out.append(f"<h3>{esc(t['h'])}</h3>")
+        elif "ul" in t:
+            out.append("<ul>" + "".join(f"<li>{esc(x)}</li>" for x in t["ul"]) + "</ul>")
+        elif "sig" in t:
+            out.append(f'<p class="sig">{esc(t["sig"])}</p>')
+    return "\n".join(out)
+
 def meta(e):
     rows = [("Datum", e["datum"])]
     if e.get("zeit"): rows.append(("Zeit", e["zeit"]))
@@ -172,7 +185,7 @@ for e in EVENTS:
 <section class="row">
 <h2 class="label">{"Vorschau" if e.get("upcoming") else "Rückblick"}</h2>
 <div class="body text">
-{"".join(f"<p>{esc(t)}</p>" for t in e["text"])}
+{render_text(e["text"])}
 </div>
 </section>
 </article>

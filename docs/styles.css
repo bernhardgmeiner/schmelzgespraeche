@@ -62,6 +62,11 @@ dl.meta dd{margin:0}
 .steps p{margin:0;max-width:30em}
 .text p{max-width:38em;text-wrap:pretty}
 .text p:last-child{margin-bottom:0}
+.text h3{font-size:22px;line-height:1.25;margin:1.6em 0 .55em;max-width:30em;text-wrap:balance}
+.text h3:first-child{margin-top:0}
+.text ul{margin:0 0 1em;padding-left:1.15em;max-width:38em}
+.text li{margin:.25em 0}
+.text .sig{color:var(--muted);font-size:16px}
 .crumb{padding:28px 0 0}
 .ev-head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--gut);padding:clamp(28px,5vw,56px) 0 clamp(40px,6vw,80px);align-items:start}
 .ev-head .info{grid-column:1/7}
