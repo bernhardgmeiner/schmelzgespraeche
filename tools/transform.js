@@ -8,10 +8,12 @@ function poster(e, w) {
   return M + e.poster + "/v1/fill/w_" + w + ",h_" + w + ",q_85,enc_auto/p.jpg";
 }
 function photoUrls(p) {
-  var id = "ae5aaf_" + p[0].replace(/\.(\w+)$/, "~mv2.$1");
   var w = p[1], h = p[2];
   var th = Math.min(440, h);
   var tw = Math.round(th * w / h);
+  if (p[0].charAt(0) === "/") // Foto liegt im Repository (docs/fotos/...), Vorschau daneben als -k.jpg
+    return { thumb: p[0].replace(/\.jpg$/, "-k.jpg"), big: p[0], tw: tw, th: th, r: (w / h).toFixed(3) };
+  var id = "ae5aaf_" + p[0].replace(/\.(\w+)$/, "~mv2.$1");
   return {
     thumb: M + id + "/v1/fill/w_" + tw + ",h_" + th + ",q_80,enc_auto/f.jpg",
     big: M + id + "/v1/fit/w_1800,h_1800,q_85,enc_auto/f.jpg",

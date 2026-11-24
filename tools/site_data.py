@@ -125,10 +125,11 @@ EVENTS = [
   dict(nr=16, slug="franz-stefan-gady", name="Franz-Stefan Gady", short="Wie erklärt man Krieg? Die Welt 2026 verstehen",
        poster=M+"ae5aaf_04439841fabb4e88b4c5fd1a8699a5c1~mv2.webp",
        date="2026-11-24", datum="Dienstag, 24. November 2026", zeit="10:15–12 Uhr", ort="Atrium",
-       publikum="Oberstufe", team="Schüler:innen der Oberstufe", upcoming=True,
+       publikum="gesamte Oberstufe", team="Emma Hanak, Melody Celik, Oskar Engelmayer",
        text=[
-        "Franz-Stefan Gady kennt man aus Analysen zum Krieg in der Ukraine und zur Sicherheit Europas, aus dem ZIB-Studio und von internationalen Podien. Am 24. November 2026 kommt der Militäranalyst ins Atrium.",
-        "Der Titel: „Wie erklärt man Krieg? Die Welt 2026 verstehen“. Vorbereitet und moderiert wird der Vormittag, wie jedes Schmelzgespräch, von Schüler:innen der Oberstufe."]),
+        "Am 24. November 2026 war Franz-Stefan Gady im Atrium zu Gast, vor der gesamten Oberstufe. Man kennt den Militäranalysten aus Analysen zum Krieg in der Ukraine und zur Sicherheit Europas, aus dem ZIB-Studio und von internationalen Podien.",
+        "Der Titel: „Wie erklärt man Krieg? Die Welt 2026 verstehen“. Es ging um den Ukraine-Konflikt und um Österreichs Neutralität. Um Sicherheitsbewusstsein. Und um Militarisierung.",
+        "Vorbereitet und moderiert hat das Gespräch das Team der Schmelzgespräche: Emma Hanak, Melody Celik und Oskar Engelmayer."]),
 ]
 
 SCHULJAHRE = [

@@ -292,7 +292,7 @@ im += '''<div class="wrap">
 </section>
 <section class="row">
 <h2 class="label">Datenschutz</h2>
-<div class="body text"><p>Diese Website wird über GitHub Pages (GitHub Inc.) ausgeliefert. GitHub speichert beim Aufruf aus Sicherheitsgründen die IP-Adresse der Besucher:innen. Plakate und Fotos kommen aus der Mediathek von Wix (static.wixstatic.com), dabei erhält auch Wix die IP-Adresse. Die Website setzt keine Cookies und nutzt keine Statistik- oder Werbedienste. Wenn Sie uns per E-Mail schreiben, verwenden wir Ihre Angaben nur, um Ihre Anfrage zu beantworten.</p></div>
+<div class="body text"><p>Diese Website wird über GitHub Pages (GitHub Inc.) ausgeliefert. GitHub speichert beim Aufruf aus Sicherheitsgründen die IP-Adresse der Besucher:innen. Plakate und die meisten Fotos kommen aus der Mediathek von Wix (static.wixstatic.com), dabei erhält auch Wix die IP-Adresse. Die Website setzt keine Cookies und nutzt keine Statistik- oder Werbedienste. Wenn Sie uns per E-Mail schreiben, verwenden wir Ihre Angaben nur, um Ihre Anfrage zu beantworten.</p></div>
 </section>
 </div>
 '''
